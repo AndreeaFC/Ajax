@@ -14,6 +14,7 @@ angular.module("mainModule")
                         $scope.posts.push($scope.newPost);
                         $scope.newPost = {};
                     });
+
             }
         }
     ]);
