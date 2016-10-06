@@ -7,7 +7,6 @@ angular.module("mainModule")
         "$locationProvider",
         function ($routeProvider, $locationProvider) {
             $locationProvider.html5Mode(true);
-
             $routeProvider
 
                 .when("/", {
@@ -16,5 +15,12 @@ angular.module("mainModule")
                     caseInsensitiveMatch: true,
                     activeTab: "Home"
                 })
+
+                .when("/Subscriptions", {
+                    templateUrl: "Views/Subscriptions.html",
+                    controller: "SubscriptionsController",
+                    caseInsensitiveMatch: true,
+                    activeTab: "Subscriptions"
+                });
         }
-    ])
+    ]);
